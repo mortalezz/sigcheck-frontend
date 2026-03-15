@@ -410,6 +410,25 @@ export default function SigCheck() {
           margin-top: 32px;
         }
         footer a { color: #999; }
+
+        @media (max-width: 640px) {
+          .header-inner { flex-direction: column; gap: 8px; text-align: center; }
+          .hero h1 { font-size: 26px; }
+          .hero p { font-size: 14px; }
+          .drop-zone { padding: 32px 16px; }
+          .drop-zone .icon { font-size: 32px; }
+          .results-header { flex-direction: column; align-items: flex-start; }
+          .verdict-pill { font-size: 12px; padding: 6px 14px; }
+          .stats { gap: 8px; }
+          .stat { font-size: 11px; padding: 6px 10px; }
+          .tabs { gap: 0; }
+          .tab { padding: 8px 12px; font-size: 12px; }
+          .download-bar { flex-direction: column; }
+          .dl-btn, .new-btn { width: 100%; text-align: center; }
+          .new-btn { margin-left: 0; }
+          .report-frame { min-height: 400px; }
+          .json-view { font-size: 10px; max-height: 400px; }
+        }
       `}</style>
 
       {/* HEADER */}
