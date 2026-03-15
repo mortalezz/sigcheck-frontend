@@ -424,14 +424,18 @@ export default function SigCheck() {
           .tabs { gap: 0; }
           .tab { padding: 8px 12px; font-size: 12px; }
           .download-bar {
-            display: grid;
+            display: grid !important;
             grid-template-columns: 1fr 1fr;
             gap: 10px;
+            flex-wrap: nowrap;
           }
           .dl-btn, .new-btn {
             width: 100%;
             text-align: center;
             margin-left: 0;
+            padding: 12px 10px;
+            font-size: 12px;
+            box-sizing: border-box;
           }
           .report-frame { min-height: 400px; }
           .json-view { font-size: 10px; max-height: 400px; }
