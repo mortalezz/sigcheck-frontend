@@ -423,9 +423,16 @@ export default function SigCheck() {
           .stat { font-size: 11px; padding: 6px 10px; }
           .tabs { gap: 0; }
           .tab { padding: 8px 12px; font-size: 12px; }
-          .download-bar { flex-direction: column; }
-          .dl-btn, .new-btn { width: 100%; text-align: center; }
-          .new-btn { margin-left: 0; }
+          .download-bar {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+          }
+          .dl-btn, .new-btn {
+            width: 100%;
+            text-align: center;
+            margin-left: 0;
+          }
           .report-frame { min-height: 400px; }
           .json-view { font-size: 10px; max-height: 400px; }
         }
